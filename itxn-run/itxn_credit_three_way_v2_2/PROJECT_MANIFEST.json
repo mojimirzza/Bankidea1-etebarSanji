@@ -1,0 +1,136 @@
+{
+  "project": "ITXN Credit-Activity Case Study v2.2 — free-router live smoke test",
+  "python_minimum": "3.10",
+  "dataset_rows": 2504,
+  "synthetic_customers": 80,
+  "input_columns": 17,
+  "offline_model_api_calls": 0,
+  "unit_tests_total": 23,
+  "unit_tests_passed": 23,
+  "controlled_fault_injection_total": 7,
+  "controlled_faults_rejected": 7,
+  "live_model_calls_per_comparison_max": 2,
+  "live_model_api_verified": false,
+  "free_model_default": "openrouter/free",
+  "credit_decision_produced": false,
+  "features_independently_reimplemented_for_comparison": false,
+  "files": {
+    ".env.example": {
+      "bytes": 444,
+      "sha256": "9f81fae46220a1b622b1bcbc05f0c7d63a9797f766246609f120207f7fbeaa1d"
+    },
+    ".gitignore": {
+      "bytes": 45,
+      "sha256": "bb7cda5256aa726623ea12605baffe9f637c7dca4efbabd408a96a7a7da2c799"
+    },
+    "README.md": {
+      "bytes": 5494,
+      "sha256": "98e8fc4014c4f9430910ce7cd4673604fabd924d15f96adc65f25b9548d30f2e"
+    },
+    "README_FA.md": {
+      "bytes": 8411,
+      "sha256": "02ab64c929b15f4a5be8726ccc3040cdffddfff90508a402c5a47789f0c47d82"
+    },
+    "VERIFICATION_v2.2.txt": {
+      "bytes": 805,
+      "sha256": "e102f903448400f38126bcb24e7e2e1ead31beb70666a31204d8854ff9886fcc"
+    },
+    "agent.py": {
+      "bytes": 3862,
+      "sha256": "5161814879b0dac06f3d331aed8a4acf10a953686da267b5b22925fab534aa12"
+    },
+    "agent_core.py": {
+      "bytes": 10041,
+      "sha256": "eee1e66301875eff1e1304e29095b14ff838a6b1cb1c88e7129588005540c4f9"
+    },
+    "agent_harness.py": {
+      "bytes": 4641,
+      "sha256": "6ac6f7f0e8ac641a3292bbc18a6dfc1f29a039f72cc6994ed0b0ec6d386e3db5"
+    },
+    "baseline.py": {
+      "bytes": 2107,
+      "sha256": "8bc9251c36df67ff9c4476b3efdf44695564a91a0539f4fe7cb0d33a374bb7db"
+    },
+    "baseline_features_previous.csv": {
+      "bytes": 8957,
+      "sha256": "a6768a18330bf33d8a6f96c38f16c826719ab8c7093a14a240315c9840c159b2"
+    },
+    "comparison_v1_reference.json": {
+      "bytes": 1426,
+      "sha256": "f6b366c2530c254f0de761e8d316181525c111ee99b55950acc16dbaaf4cbe76"
+    },
+    "features.py": {
+      "bytes": 6750,
+      "sha256": "b918d6e47cd04c63a0c1b4f42139564b07ef776a8eea522a5c59e9f934d5a28e"
+    },
+    "harness.py": {
+      "bytes": 5327,
+      "sha256": "811091204ea0705f9b8b562470cf27eae36192b497e7f311e304606be788a8c7"
+    },
+    "reports/comparison_demo.json": {
+      "bytes": 1846,
+      "sha256": "e1fb6d6cb12b6a2776607d470939d841a9de64c41576fa6d4be8d6e26446a570"
+    },
+    "reports/controlled_evaluation.json": {
+      "bytes": 4921,
+      "sha256": "85a2780ba010a33e8e9ca864590ca1010f84f020bec5fcf20c37de9d34fae157"
+    },
+    "reports/customer_comparison.csv": {
+      "bytes": 8390,
+      "sha256": "9201d4a6f62d7613d3332b6c000f2139173065f65502ea8235dfbb66179a9566"
+    },
+    "reports/result_agent_harness_offline_demo.json": {
+      "bytes": 178802,
+      "sha256": "5e35172f66979bce5cac6952f5e8c96843dee8eda1b5d359cf5a13e57ae1c4fe"
+    },
+    "reports/result_agent_offline_demo.json": {
+      "bytes": 107410,
+      "sha256": "5c0ad437d9a8d75df011597d59626ca9f0c526b0368221ca43f00d50f0b99760"
+    },
+    "reports/result_baseline.json": {
+      "bytes": 71712,
+      "sha256": "4c5c9f8a5cc75fc74fa9ad238a96647010b48da644f2c192f4df304ae056e346"
+    },
+    "requirements.txt": {
+      "bytes": 103,
+      "sha256": "7e435a4ac90cc221839eaf84f7878fad78f3ea8a3b91b1976c878343fc75303e"
+    },
+    "run_controlled_evaluation.py": {
+      "bytes": 7073,
+      "sha256": "2344109ddc1f6223cc0b3c256f84f92445ad68dd83b95e104ac7672efeaabb07"
+    },
+    "run_demo.py": {
+      "bytes": 4837,
+      "sha256": "5f161aba82e2d717ed6379ef9d90ccb72db84766e742bb0928618b64bcdf94d4"
+    },
+    "run_live_comparison.py": {
+      "bytes": 5591,
+      "sha256": "1a6bb9a9dd19b6fba135ba08b6f4f0e7d3bdf8c9d944406879cdc703eac339aa"
+    },
+    "synthetic_itxn.csv": {
+      "bytes": 369476,
+      "sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1"
+    },
+    "tests/fixtures/missing_column.csv": {
+      "bytes": 25,
+      "sha256": "a7229453bd6f0f6374c6f6c99d8212f840027f71c1b094090653a37d421a7b3a"
+    },
+    "tests/test_case_study.py": {
+      "bytes": 3037,
+      "sha256": "bab827a029bc5692bcb08279ad883a76a62f7ab0d302de893f24982d5c205d34"
+    },
+    "tests/test_hardened_harness.py": {
+      "bytes": 2762,
+      "sha256": "5627991b3173df9f101e24610871d94ad3a2fc6a752b8e587a58eeb50caabfac"
+    },
+    "tests/test_live_free_router.py": {
+      "bytes": 4214,
+      "sha256": "9312f96023ff7d2ce276e5b1ec5b52f77d5f805827c6ce23515f265dc272627f"
+    }
+  },
+  "notes": [
+    "OpenRouter adapter and live comparison protocol are ready, but no live API request was performed in this environment.",
+    "The live comparison calls the agent once and reuses the exact same payload for harness validation.",
+    "Only synthetic data may be sent to a third-party model API."
+  ]
+}

@@ -1,0 +1,22 @@
+ITXN Credit Case Study v2.2 — verification log
+
+Offline dataset run:
+- rows: 2504
+- synthetic customers: 80
+- same customer set across all three paths: PASS
+- shared deterministic features consistent: PASS
+- harness accepts 80/80 valid offline demo payloads: PASS
+
+Controlled evaluation:
+- injected-output fault cases rejected: 7/7
+- live model/API requests: 0
+
+Automated tests:
+- command: python -m unittest discover -s tests -v
+- result: 23 passed, 0 failed
+
+Compilation:
+- command: python -m compileall -q .
+- result: PASS
+
+New free-router adapter and live-comparison tests use mocked API responses only. No real OpenRouter API call was performed in this environment because no user key was available here. Live usage remains unverified until the user runs run_live_comparison.py with their own key.

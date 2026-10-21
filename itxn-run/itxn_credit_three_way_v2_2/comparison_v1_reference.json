@@ -1,0 +1,53 @@
+{
+  "dataset": "synthetic_itxn.csv",
+  "same_dataset_for_all": true,
+  "same_feature_results_for_all": true,
+  "programs": [
+    {
+      "program": "python_baseline",
+      "input_rows": 2504,
+      "customer_count": 80,
+      "elapsed_seconds": 0.015298,
+      "validation": {
+        "status": "PASS",
+        "checks": [
+          "required columns present",
+          "customer id nonblank",
+          "human review only"
+        ]
+      }
+    },
+    {
+      "program": "agent_prototype",
+      "input_rows": 2504,
+      "customer_count": 80,
+      "elapsed_seconds": 0.014376,
+      "validation": {
+        "status": "PASS",
+        "checks": [
+          "input inspected",
+          "feature step executed",
+          "human review only"
+        ]
+      }
+    },
+    {
+      "program": "agent_plus_harness",
+      "input_rows": 2504,
+      "customer_count": 80,
+      "elapsed_seconds": 0.069904,
+      "validation": {
+        "status": "PASS",
+        "checks": [
+          "input/output contracts",
+          "negative tests",
+          "audit hashes",
+          "human review only"
+        ]
+      }
+    }
+  ],
+  "harness_tests_passed": 6,
+  "harness_test_count": 6,
+  "interpretation": "Timing is a local single-run measurement, not a benchmark. The agent programs are deterministic orchestration prototypes and do not call an LLM. Transaction activity is not a credit decision; all records require human review."
+}

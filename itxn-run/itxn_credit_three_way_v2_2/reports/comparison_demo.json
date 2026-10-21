@@ -1,0 +1,65 @@
+{
+  "study": "ITXN credit activity assessment: three implementation patterns",
+  "mode": "offline_demo_only",
+  "dataset": {
+    "dataset_file": "synthetic_itxn.csv",
+    "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+    "row_count": 2504,
+    "customer_count": 80,
+    "column_count": 17,
+    "columns": [
+      "synthetic_customer_id",
+      "msgtype",
+      "refnum",
+      "pan",
+      "procode",
+      "txnamt",
+      "fees",
+      "datein",
+      "timein",
+      "dateout",
+      "timeout",
+      "respcode",
+      "rev_flag",
+      "hot_flag",
+      "token_requester",
+      "token_trust_level",
+      "server_name"
+    ],
+    "synthetic_only": true
+  },
+  "programs": [
+    {
+      "name": "Python baseline",
+      "file": "result_baseline.json",
+      "customers": 80,
+      "model_requests": 0
+    },
+    {
+      "name": "AI Agent (offline simulation)",
+      "file": "result_agent_offline_demo.json",
+      "customers": 80,
+      "model_requests": 0
+    },
+    {
+      "name": "AI Agent + Harness (offline simulation)",
+      "file": "result_agent_harness_offline_demo.json",
+      "customers": 80,
+      "model_requests": 0,
+      "harness_accepted": 80,
+      "harness_rejected": 0
+    }
+  ],
+  "checks": {
+    "same_customer_set": true,
+    "same_deterministic_features": true,
+    "all_harness_demo_outputs_accepted": true
+  },
+  "interpretation": [
+    "This demo makes zero model/API calls, so it does not measure a live LLM's reasoning quality, latency, or cost.",
+    "The Agent outputs are deterministic stand-ins to check the flow and file contracts.",
+    "All three methods describe synthetic transaction activity; none approves or rejects credit.",
+    "A live comparison is opt-in per customer and uses at most two model requests per Agent run."
+  ],
+  "elapsed_seconds": 0.0352
+}

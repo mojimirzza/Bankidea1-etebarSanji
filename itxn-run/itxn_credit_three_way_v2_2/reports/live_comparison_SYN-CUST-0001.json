@@ -1,0 +1,112 @@
+{
+  "study": "ITXN synthetic activity assessment: baseline vs live Agent vs same Agent + Harness",
+  "mode": "live_one_customer",
+  "customer_id": "SYN-CUST-0001",
+  "dataset": {
+    "file": "synthetic_itxn.csv",
+    "sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+    "synthetic_only": true
+  },
+  "protocol": {
+    "model_calls": "One Agent execution (at most 2 API requests). The identical raw Agent payload is reused for the Harness check.",
+    "fairness_note": "Agent and Agent+Harness are evaluated on the same response, so differences are attributable to the Harness checks, not a second model sample.",
+    "baseline_calls": 0,
+    "automatic_retries": 0
+  },
+  "baseline": {
+    "engine": "deterministic_python_baseline",
+    "features": {
+      "synthetic_customer_id": "SYN-CUST-0001",
+      "txn_count": 48,
+      "active_days_observed": 35,
+      "amount_sum_observed": 13985326.0,
+      "amount_avg_observed": 291360.96,
+      "amount_validity_rate": 1.0,
+      "reversal_count": 0,
+      "reversal_rate": 0.0,
+      "response_code_coverage": 1.0,
+      "success_rate_among_known_codes": 0.8542
+    },
+    "observed_signals": [
+      "TRANSACTION_ACTIVITY_OBSERVED"
+    ],
+    "missing_evidence": [
+      "REPAYMENT_HISTORY",
+      "INCOME_OR_CASHFLOW",
+      "EXISTING_OBLIGATIONS"
+    ],
+    "review_outcome": "HUMAN_REVIEW_REQUIRED"
+  },
+  "agent": {
+    "engine": "live_openai_compatible_tool_agent",
+    "requested_model": "openrouter/free",
+    "models_used_reported_by_provider": [
+      "nvidia/nemotron-3.5-lightning:free",
+      "minimax/minimax-m3.1-flash:free"
+    ],
+    "api_requests": 2,
+    "usage_tokens": {
+      "prompt_tokens": 1330,
+      "completion_tokens": 432,
+      "total_tokens": 1762
+    },
+    "request_ids": [
+      "gen-1792509625-5Rttds5afSwxcjEspgyr",
+      "gen-1792509629-HRaTr5Z53aMoaoxhbjJC"
+    ],
+    "runtime_seconds": 6.9134,
+    "basic_guard_status": "ACCEPTED_BASIC_GUARDS",
+    "basic_guard_errors"I: [],
+    "payload": {
+      "customer_id": "SYN-CUST-0001",
+      "narrative": "Transaction activity was observed, but the available data alone does not establish repayment capacity.",
+      "selected_signals": [
+        "TRANSACTION_ACTIVITY_OBSERVED"
+      ],
+      "evidence_fields": [
+        "active_days_observed",
+        "amount_avg_observed",
+        "amount_sum_observed",
+        "amount_validity_rate",
+        "response_code_coverage",
+        "reversal_count",
+        "reversal_rate",
+        "success_rate_among_known_codes",
+        "txn_count"
+      ],
+      "missing_evidence": [
+        "REPAYMENT_HISTORY",
+        "INCOME_OR_CASHFLOW",
+        "EXISTING_OBLIGATIONS"
+      ],
+      "review_outcome": "HUMAN_REVIEW_REQUIRED"
+    }
+  },
+  "agent_plus_harness": {
+    "same_agent_payload_reused": true,
+    "harness_status": "ACCEPTED",
+    "validation": {
+      "status": "PASS",
+      "checks": [
+        "exact output schema",
+        "customer identity",
+        "human review only",
+        "all observed signals included",
+        "signals supported by tool output",
+        "evidence field citations",
+        "required missing evidence present",
+        "no numeric claims in narrative",
+        "no prohibited credit conclusion"
+      ]
+    },
+    "review_outcome": "HUMAN_REVIEW_REQUIRED"
+  },
+  "elapsed_seconds": 6.9299,
+  "credit_decision_produced": false,
+  "conclusion": [
+    "This single-customer run tests a live model's ability to use one read-only tool and produce an evidence summary.",
+    "The Harness can reject payload-contract/policy violations; it cannot establish repayment capacity.",
+    "One customer is a smoke test, not evidence of general superiority or predictive validity.",
+    "Only synthetic data is permitted in this experiment; do not submit real banking/customer data to an external model API."
+  ]
+}

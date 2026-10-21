@@ -1,0 +1,5181 @@
+{
+  "program": "ai_agent_plus_harness",
+  "mode": "offline",
+  "dataset": {
+    "dataset_file": "synthetic_itxn.csv",
+    "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+    "row_count": 2504,
+    "customer_count": 80,
+    "column_count": 17,
+    "columns": [
+      "synthetic_customer_id",
+      "msgtype",
+      "refnum",
+      "pan",
+      "procode",
+      "txnamt",
+      "fees",
+      "datein",
+      "timein",
+      "dateout",
+      "timeout",
+      "respcode",
+      "rev_flag",
+      "hot_flag",
+      "token_requester",
+      "token_trust_level",
+      "server_name"
+    ],
+    "synthetic_only": true
+  },
+  "processed_customers": 80,
+  "elapsed_seconds": 0.0023,
+  "model_requests_total": 0,
+  "accepted_count": 80,
+  "rejected_needs_review_count": 0,
+  "results": [
+    {
+      "customer_id": "SYN-CUST-0001",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0001",
+        "txn_count": 48,
+        "active_days_observed": 35,
+        "amount_sum_observed": 13985326.0,
+        "amount_avg_observed": 291360.96,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 0,
+        "reversal_rate": 0.0,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.8542
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0001",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED"
+        ],
+        "evidence_fields": [
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0002",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0002",
+        "txn_count": 41,
+        "active_days_observed": 30,
+        "amount_sum_observed": 117025923.0,
+        "amount_avg_observed": 2854290.8,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 0,
+        "reversal_rate": 0.0,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.9268
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0002",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED"
+        ],
+        "evidence_fields": [
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0003",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0003",
+        "txn_count": 48,
+        "active_days_observed": 38,
+        "amount_sum_observed": 77700505.0,
+        "amount_avg_observed": 1618760.52,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 0,
+        "reversal_rate": 0.0,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.9167
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0003",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED"
+        ],
+        "evidence_fields": [
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0004",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0004",
+        "txn_count": 11,
+        "active_days_observed": 10,
+        "amount_sum_observed": 4682876.0,
+        "amount_avg_observed": 425716.0,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 0,
+        "reversal_rate": 0.0,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.8182
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0004",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED"
+        ],
+        "evidence_fields": [
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0005",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0005",
+        "txn_count": 21,
+        "active_days_observed": 20,
+        "amount_sum_observed": 39785196.0,
+        "amount_avg_observed": 1894533.14,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 2,
+        "reversal_rate": 0.0952,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.6667
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0005",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED",
+          "REVERSALS_OBSERVED"
+        ],
+        "evidence_fields": [
+          "reversal_count",
+          "reversal_rate",
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0006",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0006",
+        "txn_count": 43,
+        "active_days_observed": 35,
+        "amount_sum_observed": 78301508.0,
+        "amount_avg_observed": 1820965.3,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 1,
+        "reversal_rate": 0.0233,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.814
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0006",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED",
+          "REVERSALS_OBSERVED"
+        ],
+        "evidence_fields": [
+          "reversal_count",
+          "reversal_rate",
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0007",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0007",
+        "txn_count": 25,
+        "active_days_observed": 23,
+        "amount_sum_observed": 69760690.0,
+        "amount_avg_observed": 2790427.6,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 0,
+        "reversal_rate": 0.0,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.72
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0007",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED"
+        ],
+        "evidence_fields": [
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0008",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0008",
+        "txn_count": 37,
+        "active_days_observed": 29,
+        "amount_sum_observed": 27906441.0,
+        "amount_avg_observed": 754228.14,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 0,
+        "reversal_rate": 0.0,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.7838
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0008",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED"
+        ],
+        "evidence_fields": [
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0009",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0009",
+        "txn_count": 38,
+        "active_days_observed": 29,
+        "amount_sum_observed": 12913241.0,
+        "amount_avg_observed": 339822.13,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 1,
+        "reversal_rate": 0.0263,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.9211
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0009",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED",
+          "REVERSALS_OBSERVED"
+        ],
+        "evidence_fields": [
+          "reversal_count",
+          "reversal_rate",
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0010",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0010",
+        "txn_count": 11,
+        "active_days_observed": 10,
+        "amount_sum_observed": 33724894.0,
+        "amount_avg_observed": 3065899.45,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 0,
+        "reversal_rate": 0.0,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.9091
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0010",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED"
+        ],
+        "evidence_fields": [
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0011",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0011",
+        "txn_count": 24,
+        "active_days_observed": 21,
+        "amount_sum_observed": 7538838.0,
+        "amount_avg_observed": 314118.25,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 0,
+        "reversal_rate": 0.0,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.9167
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0011",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED"
+        ],
+        "evidence_fields": [
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0012",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0012",
+        "txn_count": 33,
+        "active_days_observed": 30,
+        "amount_sum_observed": 27296654.0,
+        "amount_avg_observed": 827171.33,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 0,
+        "reversal_rate": 0.0,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.8182
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0012",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED"
+        ],
+        "evidence_fields": [
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0013",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0013",
+        "txn_count": 30,
+        "active_days_observed": 27,
+        "amount_sum_observed": 21222633.0,
+        "amount_avg_observed": 707421.1,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 0,
+        "reversal_rate": 0.0,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.8
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0013",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED"
+        ],
+        "evidence_fields": [
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0014",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0014",
+        "txn_count": 18,
+        "active_days_observed": 18,
+        "amount_sum_observed": 10323549.0,
+        "amount_avg_observed": 573530.5,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 0,
+        "reversal_rate": 0.0,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.8333
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0014",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED"
+        ],
+        "evidence_fields": [
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0015",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0015",
+        "txn_count": 51,
+        "active_days_observed": 39,
+        "amount_sum_observed": 35249094.0,
+        "amount_avg_observed": 691158.71,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 2,
+        "reversal_rate": 0.0392,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.9216
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0015",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED",
+          "REVERSALS_OBSERVED"
+        ],
+        "evidence_fields": [
+          "reversal_count",
+          "reversal_rate",
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0016",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0016",
+        "txn_count": 11,
+        "active_days_observed": 11,
+        "amount_sum_observed": 9688717.0,
+        "amount_avg_observed": 880792.45,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 0,
+        "reversal_rate": 0.0,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 1.0
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0016",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED"
+        ],
+        "evidence_fields": [
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0017",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0017",
+        "txn_count": 51,
+        "active_days_observed": 39,
+        "amount_sum_observed": 123694804.0,
+        "amount_avg_observed": 2425388.31,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 2,
+        "reversal_rate": 0.0392,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.8039
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0017",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED",
+          "REVERSALS_OBSERVED"
+        ],
+        "evidence_fields": [
+          "reversal_count",
+          "reversal_rate",
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0018",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0018",
+        "txn_count": 55,
+        "active_days_observed": 40,
+        "amount_sum_observed": 61755644.0,
+        "amount_avg_observed": 1122829.89,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 1,
+        "reversal_rate": 0.0182,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.7455
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0018",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED",
+          "REVERSALS_OBSERVED"
+        ],
+        "evidence_fields": [
+          "reversal_count",
+          "reversal_rate",
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0019",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0019",
+        "txn_count": 26,
+        "active_days_observed": 22,
+        "amount_sum_observed": 6756017.0,
+        "amount_avg_observed": 259846.81,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 0,
+        "reversal_rate": 0.0,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.9231
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0019",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED"
+        ],
+        "evidence_fields": [
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0020",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0020",
+        "txn_count": 46,
+        "active_days_observed": 31,
+        "amount_sum_observed": 112868032.0,
+        "amount_avg_observed": 2453652.87,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 3,
+        "reversal_rate": 0.0652,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.8261
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0020",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED",
+          "REVERSALS_OBSERVED"
+        ],
+        "evidence_fields": [
+          "reversal_count",
+          "reversal_rate",
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0021",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0021",
+        "txn_count": 46,
+        "active_days_observed": 33,
+        "amount_sum_observed": 101688730.0,
+        "amount_avg_observed": 2210624.57,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 0,
+        "reversal_rate": 0.0,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.8478
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0021",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED"
+        ],
+        "evidence_fields": [
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0022",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0022",
+        "txn_count": 42,
+        "active_days_observed": 36,
+        "amount_sum_observed": 109825022.0,
+        "amount_avg_observed": 2614881.48,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 1,
+        "reversal_rate": 0.0238,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.881
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0022",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED",
+          "REVERSALS_OBSERVED"
+        ],
+        "evidence_fields": [
+          "reversal_count",
+          "reversal_rate",
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0023",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0023",
+        "txn_count": 37,
+        "active_days_observed": 31,
+        "amount_sum_observed": 61307883.0,
+        "amount_avg_observed": 1656969.81,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 0,
+        "reversal_rate": 0.0,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.8378
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0023",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED"
+        ],
+        "evidence_fields": [
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0024",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0024",
+        "txn_count": 35,
+        "active_days_observed": 30,
+        "amount_sum_observed": 39497261.0,
+        "amount_avg_observed": 1128493.17,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 0,
+        "reversal_rate": 0.0,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.8857
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0024",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED"
+        ],
+        "evidence_fields": [
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0025",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0025",
+        "txn_count": 27,
+        "active_days_observed": 23,
+        "amount_sum_observed": 9887529.0,
+        "amount_avg_observed": 366204.78,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 0,
+        "reversal_rate": 0.0,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.7778
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0025",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED"
+        ],
+        "evidence_fields": [
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0026",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0026",
+        "txn_count": 49,
+        "active_days_observed": 37,
+        "amount_sum_observed": 24443355.0,
+        "amount_avg_observed": 498843.98,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 1,
+        "reversal_rate": 0.0204,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.8571
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0026",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED",
+          "REVERSALS_OBSERVED"
+        ],
+        "evidence_fields": [
+          "reversal_count",
+          "reversal_rate",
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0027",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0027",
+        "txn_count": 16,
+        "active_days_observed": 14,
+        "amount_sum_observed": 45952275.0,
+        "amount_avg_observed": 2872017.19,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 0,
+        "reversal_rate": 0.0,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.875
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0027",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED"
+        ],
+        "evidence_fields": [
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0028",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0028",
+        "txn_count": 29,
+        "active_days_observed": 25,
+        "amount_sum_observed": 26942382.0,
+        "amount_avg_observed": 929047.66,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 0,
+        "reversal_rate": 0.0,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.8276
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0028",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED"
+        ],
+        "evidence_fields": [
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0029",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0029",
+        "txn_count": 50,
+        "active_days_observed": 34,
+        "amount_sum_observed": 86834977.0,
+        "amount_avg_observed": 1736699.54,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 1,
+        "reversal_rate": 0.02,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.82
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0029",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED",
+          "REVERSALS_OBSERVED"
+        ],
+        "evidence_fields": [
+          "reversal_count",
+          "reversal_rate",
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0030",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0030",
+        "txn_count": 34,
+        "active_days_observed": 31,
+        "amount_sum_observed": 11193623.0,
+        "amount_avg_observed": 329224.21,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 0,
+        "reversal_rate": 0.0,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.7941
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0030",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED"
+        ],
+        "evidence_fields": [
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0031",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0031",
+        "txn_count": 12,
+        "active_days_observed": 11,
+        "amount_sum_observed": 49565921.0,
+        "amount_avg_observed": 4130493.42,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 0,
+        "reversal_rate": 0.0,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 1.0
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0031",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED"
+        ],
+        "evidence_fields": [
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0032",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0032",
+        "txn_count": 20,
+        "active_days_observed": 18,
+        "amount_sum_observed": 13663089.0,
+        "amount_avg_observed": 683154.45,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 0,
+        "reversal_rate": 0.0,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.7
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0032",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED"
+        ],
+        "evidence_fields": [
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0033",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0033",
+        "txn_count": 18,
+        "active_days_observed": 17,
+        "amount_sum_observed": 39457052.0,
+        "amount_avg_observed": 2192058.44,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 0,
+        "reversal_rate": 0.0,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.7778
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0033",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED"
+        ],
+        "evidence_fields": [
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0034",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0034",
+        "txn_count": 11,
+        "active_days_observed": 10,
+        "amount_sum_observed": 3839949.0,
+        "amount_avg_observed": 349086.27,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 1,
+        "reversal_rate": 0.0909,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.8182
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0034",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED",
+          "REVERSALS_OBSERVED"
+        ],
+        "evidence_fields": [
+          "reversal_count",
+          "reversal_rate",
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0035",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0035",
+        "txn_count": 31,
+        "active_days_observed": 26,
+        "amount_sum_observed": 8532476.0,
+        "amount_avg_observed": 275241.16,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 0,
+        "reversal_rate": 0.0,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.9032
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0035",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED"
+        ],
+        "evidence_fields": [
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0036",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0036",
+        "txn_count": 27,
+        "active_days_observed": 22,
+        "amount_sum_observed": 25651659.0,
+        "amount_avg_observed": 950061.44,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 2,
+        "reversal_rate": 0.0741,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.8889
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0036",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED",
+          "REVERSALS_OBSERVED"
+        ],
+        "evidence_fields": [
+          "reversal_count",
+          "reversal_rate",
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0037",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0037",
+        "txn_count": 17,
+        "active_days_observed": 13,
+        "amount_sum_observed": 51993784.0,
+        "amount_avg_observed": 3058457.88,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 0,
+        "reversal_rate": 0.0,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.8235
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0037",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED"
+        ],
+        "evidence_fields": [
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0038",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0038",
+        "txn_count": 21,
+        "active_days_observed": 16,
+        "amount_sum_observed": 50215661.0,
+        "amount_avg_observed": 2391221.95,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 0,
+        "reversal_rate": 0.0,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.8571
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0038",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED"
+        ],
+        "evidence_fields": [
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0039",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0039",
+        "txn_count": 31,
+        "active_days_observed": 23,
+        "amount_sum_observed": 24676321.0,
+        "amount_avg_observed": 796010.35,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 2,
+        "reversal_rate": 0.0645,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.8387
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0039",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED",
+          "REVERSALS_OBSERVED"
+        ],
+        "evidence_fields": [
+          "reversal_count",
+          "reversal_rate",
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0040",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0040",
+        "txn_count": 43,
+        "active_days_observed": 34,
+        "amount_sum_observed": 80214160.0,
+        "amount_avg_observed": 1865445.58,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 3,
+        "reversal_rate": 0.0698,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.814
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0040",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED",
+          "REVERSALS_OBSERVED"
+        ],
+        "evidence_fields": [
+          "reversal_count",
+          "reversal_rate",
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0041",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0041",
+        "txn_count": 32,
+        "active_days_observed": 28,
+        "amount_sum_observed": 33876846.0,
+        "amount_avg_observed": 1058651.44,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 4,
+        "reversal_rate": 0.125,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.9062
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0041",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED",
+          "REVERSALS_OBSERVED"
+        ],
+        "evidence_fields": [
+          "reversal_count",
+          "reversal_rate",
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0042",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0042",
+        "txn_count": 47,
+        "active_days_observed": 35,
+        "amount_sum_observed": 77404789.0,
+        "amount_avg_observed": 1646910.4,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 2,
+        "reversal_rate": 0.0426,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.8511
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0042",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED",
+          "REVERSALS_OBSERVED"
+        ],
+        "evidence_fields": [
+          "reversal_count",
+          "reversal_rate",
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0043",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0043",
+        "txn_count": 30,
+        "active_days_observed": 27,
+        "amount_sum_observed": 46049918.0,
+        "amount_avg_observed": 1534997.27,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 1,
+        "reversal_rate": 0.0333,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.9
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0043",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED",
+          "REVERSALS_OBSERVED"
+        ],
+        "evidence_fields": [
+          "reversal_count",
+          "reversal_rate",
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0044",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0044",
+        "txn_count": 8,
+        "active_days_observed": 8,
+        "amount_sum_observed": 15313644.0,
+        "amount_avg_observed": 1914205.5,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 1,
+        "reversal_rate": 0.125,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.75
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0044",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED",
+          "REVERSALS_OBSERVED"
+        ],
+        "evidence_fields": [
+          "reversal_count",
+          "reversal_rate",
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0045",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0045",
+        "txn_count": 36,
+        "active_days_observed": 29,
+        "amount_sum_observed": 25272048.0,
+        "amount_avg_observed": 702001.33,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 1,
+        "reversal_rate": 0.0278,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.9167
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0045",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED",
+          "REVERSALS_OBSERVED"
+        ],
+        "evidence_fields": [
+          "reversal_count",
+          "reversal_rate",
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0046",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0046",
+        "txn_count": 45,
+        "active_days_observed": 32,
+        "amount_sum_observed": 53024837.0,
+        "amount_avg_observed": 1178329.71,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 2,
+        "reversal_rate": 0.0444,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.7556
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0046",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED",
+          "REVERSALS_OBSERVED"
+        ],
+        "evidence_fields": [
+          "reversal_count",
+          "reversal_rate",
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0047",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0047",
+        "txn_count": 10,
+        "active_days_observed": 10,
+        "amount_sum_observed": 2955026.0,
+        "amount_avg_observed": 295502.6,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 2,
+        "reversal_rate": 0.2,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.8
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0047",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED",
+          "REVERSALS_OBSERVED"
+        ],
+        "evidence_fields": [
+          "reversal_count",
+          "reversal_rate",
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0048",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0048",
+        "txn_count": 50,
+        "active_days_observed": 41,
+        "amount_sum_observed": 15051964.0,
+        "amount_avg_observed": 301039.28,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 2,
+        "reversal_rate": 0.04,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.74
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0048",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED",
+          "REVERSALS_OBSERVED"
+        ],
+        "evidence_fields": [
+          "reversal_count",
+          "reversal_rate",
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0049",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0049",
+        "txn_count": 34,
+        "active_days_observed": 30,
+        "amount_sum_observed": 14804475.0,
+        "amount_avg_observed": 435425.74,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 1,
+        "reversal_rate": 0.0294,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.8529
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0049",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED",
+          "REVERSALS_OBSERVED"
+        ],
+        "evidence_fields": [
+          "reversal_count",
+          "reversal_rate",
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0050",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0050",
+        "txn_count": 41,
+        "active_days_observed": 34,
+        "amount_sum_observed": 21125611.0,
+        "amount_avg_observed": 515258.8,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 0,
+        "reversal_rate": 0.0,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.8293
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0050",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED"
+        ],
+        "evidence_fields": [
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0051",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0051",
+        "txn_count": 36,
+        "active_days_observed": 29,
+        "amount_sum_observed": 90304412.0,
+        "amount_avg_observed": 2508455.89,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 0,
+        "reversal_rate": 0.0,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.8333
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0051",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED"
+        ],
+        "evidence_fields": [
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0052",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0052",
+        "txn_count": 13,
+        "active_days_observed": 11,
+        "amount_sum_observed": 38808377.0,
+        "amount_avg_observed": 2985259.77,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 2,
+        "reversal_rate": 0.1538,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.9231
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0052",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED",
+          "REVERSALS_OBSERVED"
+        ],
+        "evidence_fields": [
+          "reversal_count",
+          "reversal_rate",
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0053",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0053",
+        "txn_count": 24,
+        "active_days_observed": 21,
+        "amount_sum_observed": 59223609.0,
+        "amount_avg_observed": 2467650.38,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 1,
+        "reversal_rate": 0.0417,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.8333
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0053",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED",
+          "REVERSALS_OBSERVED"
+        ],
+        "evidence_fields": [
+          "reversal_count",
+          "reversal_rate",
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0054",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0054",
+        "txn_count": 8,
+        "active_days_observed": 8,
+        "amount_sum_observed": 19330178.0,
+        "amount_avg_observed": 2416272.25,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 0,
+        "reversal_rate": 0.0,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.75
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0054",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED"
+        ],
+        "evidence_fields": [
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0055",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0055",
+        "txn_count": 41,
+        "active_days_observed": 35,
+        "amount_sum_observed": 33775525.0,
+        "amount_avg_observed": 823793.29,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 2,
+        "reversal_rate": 0.0488,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.8537
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0055",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED",
+          "REVERSALS_OBSERVED"
+        ],
+        "evidence_fields": [
+          "reversal_count",
+          "reversal_rate",
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0056",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0056",
+        "txn_count": 16,
+        "active_days_observed": 14,
+        "amount_sum_observed": 6979682.0,
+        "amount_avg_observed": 436230.12,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 1,
+        "reversal_rate": 0.0625,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.6875
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0056",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED",
+          "REVERSALS_OBSERVED"
+        ],
+        "evidence_fields": [
+          "reversal_count",
+          "reversal_rate",
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0057",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0057",
+        "txn_count": 20,
+        "active_days_observed": 18,
+        "amount_sum_observed": 10695041.0,
+        "amount_avg_observed": 534752.05,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 0,
+        "reversal_rate": 0.0,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.85
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0057",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED"
+        ],
+        "evidence_fields": [
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0058",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0058",
+        "txn_count": 42,
+        "active_days_observed": 33,
+        "amount_sum_observed": 52121818.0,
+        "amount_avg_observed": 1240995.67,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 0,
+        "reversal_rate": 0.0,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.8571
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0058",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED"
+        ],
+        "evidence_fields": [
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0059",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0059",
+        "txn_count": 15,
+        "active_days_observed": 15,
+        "amount_sum_observed": 3237606.0,
+        "amount_avg_observed": 215840.4,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 1,
+        "reversal_rate": 0.0667,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.8667
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0059",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED",
+          "REVERSALS_OBSERVED"
+        ],
+        "evidence_fields": [
+          "reversal_count",
+          "reversal_rate",
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0060",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0060",
+        "txn_count": 27,
+        "active_days_observed": 22,
+        "amount_sum_observed": 28416903.0,
+        "amount_avg_observed": 1052477.89,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 0,
+        "reversal_rate": 0.0,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.8889
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0060",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED"
+        ],
+        "evidence_fields": [
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0061",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0061",
+        "txn_count": 30,
+        "active_days_observed": 23,
+        "amount_sum_observed": 9960399.0,
+        "amount_avg_observed": 332013.3,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 1,
+        "reversal_rate": 0.0333,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.8667
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0061",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED",
+          "REVERSALS_OBSERVED"
+        ],
+        "evidence_fields": [
+          "reversal_count",
+          "reversal_rate",
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0062",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0062",
+        "txn_count": 11,
+        "active_days_observed": 11,
+        "amount_sum_observed": 5424938.0,
+        "amount_avg_observed": 493176.18,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 1,
+        "reversal_rate": 0.0909,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.8182
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0062",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED",
+          "REVERSALS_OBSERVED"
+        ],
+        "evidence_fields": [
+          "reversal_count",
+          "reversal_rate",
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0063",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0063",
+        "txn_count": 16,
+        "active_days_observed": 15,
+        "amount_sum_observed": 7049533.0,
+        "amount_avg_observed": 440595.81,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 0,
+        "reversal_rate": 0.0,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.9375
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0063",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED"
+        ],
+        "evidence_fields": [
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0064",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0064",
+        "txn_count": 45,
+        "active_days_observed": 37,
+        "amount_sum_observed": 18648910.0,
+        "amount_avg_observed": 414420.22,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 3,
+        "reversal_rate": 0.0667,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.8222
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0064",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED",
+          "REVERSALS_OBSERVED"
+        ],
+        "evidence_fields": [
+          "reversal_count",
+          "reversal_rate",
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0065",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0065",
+        "txn_count": 33,
+        "active_days_observed": 26,
+        "amount_sum_observed": 58314981.0,
+        "amount_avg_observed": 1767120.64,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 0,
+        "reversal_rate": 0.0,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.9091
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0065",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED"
+        ],
+        "evidence_fields": [
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0066",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0066",
+        "txn_count": 47,
+        "active_days_observed": 39,
+        "amount_sum_observed": 92898360.0,
+        "amount_avg_observed": 1976560.85,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 0,
+        "reversal_rate": 0.0,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.7872
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0066",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED"
+        ],
+        "evidence_fields": [
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0067",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0067",
+        "txn_count": 42,
+        "active_days_observed": 35,
+        "amount_sum_observed": 55748128.0,
+        "amount_avg_observed": 1327336.38,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 0,
+        "reversal_rate": 0.0,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.8095
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0067",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED"
+        ],
+        "evidence_fields": [
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0068",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0068",
+        "txn_count": 24,
+        "active_days_observed": 22,
+        "amount_sum_observed": 70848329.0,
+        "amount_avg_observed": 2952013.71,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 0,
+        "reversal_rate": 0.0,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.75
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0068",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED"
+        ],
+        "evidence_fields": [
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0069",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0069",
+        "txn_count": 46,
+        "active_days_observed": 32,
+        "amount_sum_observed": 21428521.0,
+        "amount_avg_observed": 465837.41,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 0,
+        "reversal_rate": 0.0,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.7609
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0069",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED"
+        ],
+        "evidence_fields": [
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0070",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0070",
+        "txn_count": 45,
+        "active_days_observed": 35,
+        "amount_sum_observed": 12467643.0,
+        "amount_avg_observed": 277058.73,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 4,
+        "reversal_rate": 0.0889,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.8222
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0070",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED",
+          "REVERSALS_OBSERVED"
+        ],
+        "evidence_fields": [
+          "reversal_count",
+          "reversal_rate",
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0071",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0071",
+        "txn_count": 52,
+        "active_days_observed": 37,
+        "amount_sum_observed": 78759820.0,
+        "amount_avg_observed": 1514611.92,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 0,
+        "reversal_rate": 0.0,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.8269
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0071",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED"
+        ],
+        "evidence_fields": [
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0072",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0072",
+        "txn_count": 36,
+        "active_days_observed": 30,
+        "amount_sum_observed": 9443729.0,
+        "amount_avg_observed": 262325.81,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 0,
+        "reversal_rate": 0.0,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.8333
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0072",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED"
+        ],
+        "evidence_fields": [
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0073",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0073",
+        "txn_count": 22,
+        "active_days_observed": 21,
+        "amount_sum_observed": 15574777.0,
+        "amount_avg_observed": 707944.41,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 0,
+        "reversal_rate": 0.0,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.8636
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0073",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED"
+        ],
+        "evidence_fields": [
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0074",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0074",
+        "txn_count": 10,
+        "active_days_observed": 9,
+        "amount_sum_observed": 18583662.0,
+        "amount_avg_observed": 1858366.2,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 0,
+        "reversal_rate": 0.0,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.8
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0074",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED"
+        ],
+        "evidence_fields": [
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0075",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0075",
+        "txn_count": 27,
+        "active_days_observed": 22,
+        "amount_sum_observed": 21840973.0,
+        "amount_avg_observed": 808924.93,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 0,
+        "reversal_rate": 0.0,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.8519
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0075",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED"
+        ],
+        "evidence_fields": [
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0076",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0076",
+        "txn_count": 11,
+        "active_days_observed": 8,
+        "amount_sum_observed": 32449833.0,
+        "amount_avg_observed": 2949984.82,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 0,
+        "reversal_rate": 0.0,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.7273
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0076",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED"
+        ],
+        "evidence_fields": [
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0077",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0077",
+        "txn_count": 50,
+        "active_days_observed": 39,
+        "amount_sum_observed": 82967462.0,
+        "amount_avg_observed": 1659349.24,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 0,
+        "reversal_rate": 0.0,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.86
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0077",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED"
+        ],
+        "evidence_fields": [
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0078",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0078",
+        "txn_count": 52,
+        "active_days_observed": 38,
+        "amount_sum_observed": 147576796.0,
+        "amount_avg_observed": 2838015.31,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 2,
+        "reversal_rate": 0.0385,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.8462
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0078",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED",
+          "REVERSALS_OBSERVED"
+        ],
+        "evidence_fields": [
+          "reversal_count",
+          "reversal_rate",
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0079",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0079",
+        "txn_count": 52,
+        "active_days_observed": 41,
+        "amount_sum_observed": 15964670.0,
+        "amount_avg_observed": 307012.88,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 0,
+        "reversal_rate": 0.0,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.8269
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0079",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED"
+        ],
+        "evidence_fields": [
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    },
+    {
+      "customer_id": "SYN-CUST-0080",
+      "engine": "offline_simulation_NOT_AN_LLM",
+      "features": {
+        "synthetic_customer_id": "SYN-CUST-0080",
+        "txn_count": 14,
+        "active_days_observed": 12,
+        "amount_sum_observed": 8919224.0,
+        "amount_avg_observed": 637087.43,
+        "amount_validity_rate": 1.0,
+        "reversal_count": 0,
+        "reversal_rate": 0.0,
+        "response_code_coverage": 1.0,
+        "success_rate_among_known_codes": 0.8571
+      },
+      "agent_payload": {
+        "customer_id": "SYN-CUST-0080",
+        "narrative": "Observed transaction activity can be summarized, but this dataset cannot establish repayment capacity. Any decision requires independent evidence and human review.",
+        "selected_signals": [
+          "TRANSACTION_ACTIVITY_OBSERVED"
+        ],
+        "evidence_fields": [
+          "txn_count"
+        ],
+        "missing_evidence": [
+          "REPAYMENT_HISTORY",
+          "INCOME_OR_CASHFLOW",
+          "EXISTING_OBLIGATIONS"
+        ],
+        "review_outcome": "HUMAN_REVIEW_REQUIRED"
+      },
+      "harness_status": "ACCEPTED",
+      "harness_validation": {
+        "status": "PASS",
+        "checks": [
+          "exact output schema",
+          "customer identity",
+          "human review only",
+          "all observed signals included",
+          "signals supported by tool output",
+          "evidence field citations",
+          "required missing evidence present",
+          "no numeric claims in narrative",
+          "no prohibited credit conclusion"
+        ]
+      },
+      "review_outcome": "HUMAN_REVIEW_REQUIRED",
+      "model_requests": 0,
+      "model": null,
+      "model_requested": null,
+      "models_used": [],
+      "usage_tokens": null,
+      "request_ids": [],
+      "agent_runtime_seconds": 0.0
+    }
+  ],
+  "trace": [
+    {
+      "customer_id": "SYN-CUST-0001",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "64d93aae46c3197484a4a9b3a0184214a26e3d19b57a2b781ca8bcd27619e565",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0002",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "8dedde1dda25820ef8e183d2c09ff9e768c0aa55f61e1521feb0d230ec374829",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0003",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "00c93666169bb7c5cdb16f9c310e90053b53b1cb6448301aa36b42b61341615a",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0004",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "adab2d2367c5b142bacbda7519e28cf9c7f0117a6b416486029d7a68e8dfaaa9",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0005",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "a311362ae645489980d0279755332ea93bef60d9c0b4557a96451ad107aa2622",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0006",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "eb996dddeca1b431afe25319780fff9ac00848de9d217866500897a2f3de0576",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0007",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "e2a76f0011b6b28398a1345c546ca9d867caa0936bf8101d2212637315086dab",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0008",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "a8fb240cf5ab456d3a015239ec4d6c8d357ce6ecdc0dcfa2e272c2e9c2902a85",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0009",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "347c54feb2c6e329a2e0566d840d6ed506e90f42c1ded474cdd047aad4fc3ca4",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0010",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "aed5653f74374c512ea1c8672897cce199f1acaeb6ab5724d6d204fe67457b89",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0011",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "d56a9b8406beca2616534a819fdd66dd57240f617dc441266b3c9ad9a272e58a",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0012",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "216583b07d630f9cade13bf06790cfe62930c7156378f108f015a9710f50654d",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0013",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "05c5fe0484ccf7b50db40d961219022292fb1536e0326e120a84b88b58dbac8f",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0014",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "1b81f116a75ec0448d9dd5a078b7f3cfd22eed537d629799afff56a9e75b54e2",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0015",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "620854a08acd3d22a47be588867c660fddfd93e922d3c8e6656241a7ce349a8d",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0016",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "20eb379561f81fbb18c62fd7afb800c21eec79ec98ae0cc891e484cd07454f52",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0017",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "0801074f3a47f9929b0f6197beb9aee4ce77b60f17d8eb6423b5f13e89b86089",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0018",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "48e06aba1f20617bdd924195c2edeadae9d8f6c298e00c51c74c6fc035bbd4ac",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0019",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "e3107ee0720486f0e5e31e23f5bc10c3395f3b1efe7079f9ce868441f100d896",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0020",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "af94c81d1f9c7f7a265632f0351bd33fcff6f3687013cc481fd73be2bd8757a6",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0021",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "437daf0ae1a515bec457fc7c21f2866c98aee1423e3f22e752317f0ced2d322a",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0022",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "f8af41a621d2e17b57bdde3bcb25232c2702f1de7a228ca41aec08b90b9aa365",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0023",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "cc11a8360b541d00da58169739d6e9b4b412a060d39fd6dea7198b1480d908fd",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0024",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "2481aff0f807387a41a061cb60e4112f28c9db607131f18809e56b2d72559357",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0025",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "8c59859f174f7f9e4fbb99c64cb8b037ad284488c9dc193c90f625c5f98064b8",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0026",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "67940344e48a343c4cbfa78a47241708abb63ff80b8554ae1deaeaf6bea8771b",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0027",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "a2eec9567b108d645a765ea3ed128c590793c6ec8c84e0ef09d2de2e83ebf546",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0028",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "02a391a9e060fec87f6d3ef994f216f4061c4e2dc2b7195d2787d74af5468deb",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0029",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "6cdc4b45f9b7c1b89462691a26876f1e0ab8496d2eaf41c95405815d1c340394",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0030",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "992c003b5d4e44035016d66a8d4afbc74452677e8d0be29df108fe985040eb4e",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0031",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "a814214654e358c415e2a37592a8d22054211f36146f6ef96691d8fbc7f603c8",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0032",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "2ebcad930ebd64e5df6533446689b8206355346af3091cf9f08f67de8149426a",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0033",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "5bd01fe74d6741105e0c8b5fe7fab97d9714ba4e3f3d4a35ccbb3a065ff170e1",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0034",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "923a4dcb19a7b21008a0d3ddb5b010abd9a99afbb041b4d8330ba434eddec75e",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0035",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "d87baca107191faf2ceb05beb4e4488fce9864ad4f0686370888879f66775209",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0036",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "5f9e170adc86b98394d809e3c9fb77e87604501dc958e65eaf10a11e77573bcc",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0037",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "616d10585cf539b83b39e5382c7c301f0f2cb5c4c872a496ea40fe0ba5f3a6b7",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0038",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "89e1e917a74a3713795c081e8cb7a6ad547a547a7053d1d1f93e181649943661",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0039",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "015a21be8aaac115afc69d1a5ba42eafc427f815dc51f9569c03b828e86b4158",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0040",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "c3799609c0a9fb22575daa2b518dd814952473140a070c2aeef7be70a6b9a848",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0041",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "80ec53ec08f21f86e02e2fcb90c3ed470aaccd065867212ce7708e6343a69daa",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0042",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "17857d10beb2022a8167c3087f8b2de879b41ec7bfa7b47e227444a8cef9edd8",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0043",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "1711db64c949888bfd725fe6767b64d6d674b106a9867b864c411be31f40d6b2",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0044",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "f1f34361957c509da6f0202858eae66c1d531a71b9e3a196266e8ea8546efd4b",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0045",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "3ad51ee0adfa28e4d5a56b255f3bd8314e9914a823bf31770b50d35249d7df69",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0046",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "ea823cfdefa0a21f59c489a3ded4f7494d93643a5be301f85e3acf203d44e2bb",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0047",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "e37f35258514ff06309dcb0ad69af7de4276bd71d28b225f57a212ff6e71758e",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0048",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "d660f49bcc746df8b5410ed070a87c989307b1ed937c1530f46c3eb7468e490b",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0049",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "b562027f8f8c1f3299304dee0f3a513ce7bade85d05a9a74d929632a8652d7a3",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0050",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "b37b2777cc5db3812db19750a9fd3da6b67e01ca2c8795c94159b47613d06eeb",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0051",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "8065b236b1eef2e3a8e60a17b0923ead0d4348bf46b5f21a69973a81ee331df2",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0052",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "ec185f7df5019048cf694f6fdf81c158ef6ef19de831d73262fb534b17949dad",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0053",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "47da396004129a62f45964c691335883cafea3a46f4782c1a7798c368f204417",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0054",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "bedf863685307bff00cbd6d7d4aeebf13618676a694777694aa5e058d60e68ef",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0055",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "0903561edac7aa716626d24cdb245f0774e07f541470bafb1cbb9d586fbd73fd",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0056",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "0c1edb619641c889f11649aa07b105f3d45b5805669fb6826e5afa58f02a10e3",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0057",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "e6c6e1c87abf4ea7cbab861255178ba3ff3fd3f78224814e34ebd5c431e24f55",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0058",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "ecd72f56cd4a328345ea38d8450242d593e9c514566602b7be48fe3eda5829fd",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0059",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "eb1c7c27725d41c3034ef71db5cc8c62f4cc1df815358d9f976673f6f48dc02b",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0060",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "794157cdf316e19c009a33e75c4fa0bfac5f4d877f2bd16747c2c0e1e60c17dc",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0061",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "753270c2bc966614dcaa01443e216743ddca727ecb8f61b7f46adcd91de50303",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0062",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "1f63dd2cddaa4a0c52f12fa6e937ff606051a050acd68fec7a43ae74d2135f2f",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0063",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "e1415e117ca8ca8e3b87a0c41d047d2c2ee52b2984d9386a274a3e91f70838d2",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0064",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "16147f550fdc4b9276125357f889f6df2cd298e16128d774099fb9b270a6f91b",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0065",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "250d802611d9be78083674bc624a1bee2bcaaca2831063993f73bee77a735e0e",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0066",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "85efe3f0e4f382f7310c33eedbec8d0ac848c22c4dd76b00da4e24b636b625e8",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0067",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "d4d4f635f2bc8a2fcb60b8b4d6cf6a247ad405fd29f562a966d08e93634eeead",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0068",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "74f8dae2d5b937fc5531f6fa284954f8662fa30037362c398bc513b60dc87979",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0069",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "7821517169e67794fbd323cb5912c6a58c2dd66ae359d4a8abf9bb6f4b45bbb1",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0070",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "5299dd81b3970cbbc18bc45236fb32a35aec44bda58bc22bf5815e39d88096cd",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0071",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "54cb5043113f29f7e88079ebf93f3db6dd7f2dc80fa5e25123cb201f5ba9870a",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0072",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "d6ab97f0636f0185e7d1505765a1157d08b416409074add25f08d2a81ef789c4",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0073",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "4501ec888b3f663136984ec601961b440a845f199c8a41842891b7e2d0ebe2f3",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0074",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "b694c93fdfe1bc0791396cdf0ae67fa88b18ca6cd07f4284d261bb89361528dd",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0075",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "827be2ec7bbb03d2e701904660ea272ec6fee59247d614ec5685caab59961672",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0076",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "ff7ff8e7cd62aff13abaeb18043456f022cb5f3451d8fd0c56b405c49bc778cc",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0077",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "1dcc2eae18817863a2a047fb333e6051e26fe03e88bacbb0378af2e6896fe37c",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0078",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "c29ddd43386e6a12017a970abcbfdc02861f1db48e1ba9cd3d7bf7419c53e5e1",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0079",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "ede86c3a1df7f2bab92887e40fcb07ff07fffc788372695a60ff934115d91f88",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    },
+    {
+      "customer_id": "SYN-CUST-0080",
+      "dataset_sha256": "23089bebe54536b68caf75ccef18dfed3cbd7a92e7bd41271410759d35f819c1",
+      "payload_sha256": "f76cd14edca28af9b888556462e283b5e86835f0c7f667dc3caa2f88c23ed651",
+      "validation_status": "PASS",
+      "harness_status": "ACCEPTED",
+      "engine": "offline_simulation_NOT_AN_LLM"
+    }
+  ],
+  "credit_decision_produced": false,
+  "interpretation": "Harness validates report contract and evidence links; it does not validate creditworthiness."
+}
